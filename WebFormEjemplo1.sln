@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormEjemplo1", "WebFormE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "recursos", "recursos", "{6E39BB71-0EFE-4C4D-82FF-E22B804E84CA}"
 	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 		WebFormEjemplo1.xmind = WebFormEjemplo1.xmind
 	EndProjectSection
 EndProject
