@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using WebFormEjemplo1.base2;
+using WebFormEjemplo1.servicio;
 
 namespace WebFormEjemplo1.dal
 {
@@ -18,7 +19,7 @@ namespace WebFormEjemplo1.dal
                     .FirstOrDefault(); // Si no esta el usuario, devuelve un nulo
                     //.First();  // Si no esta el usuario, se va a generar un error
             }
-            if (nuevo!=null && antiguo.Clave!=nuevo.Clave)
+            if (nuevo!=null && Util.Base64Encode(Util.Encriptar(antiguo.Clave))!=nuevo.Clave)
             {
                 nuevo=null;
             }

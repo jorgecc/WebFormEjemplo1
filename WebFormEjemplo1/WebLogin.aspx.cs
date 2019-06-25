@@ -23,6 +23,9 @@ namespace WebFormEjemplo1
 
             Usuario usuarioIngresado=UsuarioServicio.FactoryLogin(TxtUsuario,TxtClave);
 
+            string encriptacion=Util.Base64Encode(  Util.Encriptar(TxtClave.Text));
+            // clave admin= Pz8/P3E/YDE/Pz8/fj8BP394SgorPz8/Pz8/GT8be04=
+
             Usuario usuarioBase =UsuarioDAL.Validar(usuarioIngresado);
 
             if (usuarioBase==null)
