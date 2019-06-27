@@ -14,7 +14,7 @@ namespace WebFormEjemplo1.dal
             var nuevo=new Usuario();
             using(var grupo=new Model1())
             {
-                nuevo=grupo.usuarios
+                nuevo=grupo.Usuario
                     .Where( u => u.NombreCuenta==antiguo.NombreCuenta)
                     .FirstOrDefault(); // Si no esta el usuario, devuelve un nulo
                     //.First();  // Si no esta el usuario, se va a generar un error
@@ -30,7 +30,7 @@ namespace WebFormEjemplo1.dal
             var resultado=new List<Usuario>();
             using (var grupo = new Model1())
             {
-                resultado=grupo.usuarios
+                resultado=grupo.Usuario
                     .OrderBy( u => u.NombreCompleto )
                     .ToList();
             }
