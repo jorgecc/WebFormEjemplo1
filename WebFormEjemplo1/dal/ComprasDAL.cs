@@ -73,6 +73,8 @@ namespace WebFormEjemplo1.dal
                         group by country.country";
             using (var grupo = new Model1())
             {
+
+      
                 resultado = grupo.Database.SqlQuery<CompraDto>(sql)
                     .ToList();
             }
