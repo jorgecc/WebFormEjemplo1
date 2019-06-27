@@ -89,6 +89,7 @@
     <Compile Include="base2\Usuario.cs" />
     <Compile Include="dal\ComprasDAL.cs" />
     <Compile Include="dal\UsuarioDAL.cs" />
+    <Compile Include="dto\CompraDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
